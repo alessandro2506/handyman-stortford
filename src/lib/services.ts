@@ -11,7 +11,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "small-repairs",
     title: "Small Repairs",
     image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80",
     description:
       "From leaky taps to broken hinges — quick fixes handled professionally.",
     benefits: [
@@ -39,7 +39,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "wall-fixing-shelving",
     title: "Wall Fixing & Shelving",
     image:
-      "https://images.unsplash.com/photo-1558618047-3c8e2a4a1d48?w=600&q=80",
+      "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=600&q=80",
     description:
       "Shelves, TV brackets, curtain rails — fixed securely to any wall type.",
     benefits: [
@@ -81,7 +81,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "general-handyman",
     title: "General Handyman Jobs",
     image:
-      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
     description:
       "Not sure what you need? If it's a household job, I can handle it.",
     benefits: [

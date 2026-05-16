@@ -82,27 +82,20 @@ export default function AreasPage() {
               Stylised map placeholder — swap for an embedded map once the
               workshop address is confirmed.
             </p>
-            <div className="relative mt-6 aspect-[4/5] overflow-hidden rounded-2xl bg-gradient-to-br from-[color:var(--primary)]/15 via-white to-[color:var(--accent)]/15">
-              <svg
-                className="absolute inset-6 text-[color:var(--primary)]/35"
-                viewBox="0 0 400 520"
-                fill="none"
-                aria-hidden
-              >
-                <path
-                  d="M110 96C180 52 268 62 332 118C382 164 392 238 362 306C336 362 274 396 206 418C146 438 74 426 42 372C14 324 28 258 62 212C82 182 94 138 110 96Z"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  strokeDasharray="10 12"
-                />
-                <circle cx="210" cy="240" r="7" fill="currentColor" />
-                <circle cx="150" cy="160" r="5" fill="currentColor" />
-                <circle cx="280" cy="200" r="5" fill="currentColor" />
-                <circle cx="190" cy="340" r="5" fill="currentColor" />
-              </svg>
-              <p className="absolute bottom-8 left-8 rounded-full bg-white/90 px-4 py-2 text-xs font-bold text-[color:var(--primary)] shadow-sm backdrop-blur-sm">
-                Bishop&apos;s Stortford hub
-              </p>
+            <div
+              className="mt-6 w-full overflow-hidden rounded-2xl shadow-md"
+              style={{ height: "480px" }}
+            >
+              <iframe
+                src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40000!2d0.1607!3d51.8714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk&markers=color:red%7Clabel:B%7C51.8714,0.1607&markers=color:blue%7Clabel:S%7C51.8174,0.1586&markers=color:blue%7Clabel:H%7C51.7699,0.0942&markers=color:blue%7Clabel:M%7C51.8999,0.1996&markers=color:blue%7Clabel:R%7C51.7959,0.0026&markers=color:blue%7Clabel:W%7C51.8010,0.0197&markers=color:blue%7Clabel:D%7C51.8733,0.3690'
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Service area map — Bishop's Stortford and surrounding areas"
+              />
             </div>
           </aside>
         </div>

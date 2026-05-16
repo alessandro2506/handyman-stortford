@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { GALLERY_IMAGES } from "@/lib/gallery";
+import { GALLERY_ITEMS } from "@/lib/gallery";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -30,24 +30,22 @@ export default function GalleryPage() {
           </p>
         </header>
 
-        <div className="mt-14 columns-1 gap-6 md:columns-2 lg:columns-3">
-          {GALLERY_IMAGES.map((img, index) => (
-            <div
-              key={img.src}
-              className={`relative mb-6 break-inside-avoid overflow-hidden rounded-2xl border border-[color:var(--border)] bg-white shadow-sm ${
-                index % 3 === 1 ? "lg:translate-y-6" : ""
-              }`}
-            >
-              <div className="relative aspect-[4/5]">
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {GALLERY_ITEMS.map((item) => (
+            <figure key={item.src} className="m-0">
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-[color:var(--border)] bg-white shadow-sm">
                 <Image
-                  src={img.src}
-                  alt={img.alt}
+                  src={item.src}
+                  alt={item.caption}
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>
-            </div>
+              <figcaption className="mt-2 text-center text-sm text-[color:var(--text-secondary)]">
+                {item.caption}
+              </figcaption>
+            </figure>
           ))}
         </div>
       </div>
