@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { GALLERY_ITEMS } from "@/lib/gallery";
+import { SITE_META_DESCRIPTION } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Gallery",
-    description:
-      "A visual sample of home maintenance, repairs and finishing work by Pasquale Rocchida Handyman.",
+    description: SITE_META_DESCRIPTION,
     alternates: {
       canonical: "/gallery",
     },

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { ALL_REVIEWS } from "@/lib/reviews";
+import { SITE_META_DESCRIPTION } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Reviews",
-    description:
-      "Customer reviews for Pasquale Rocchida Handyman across Bishop's Stortford and nearby towns.",
+    description: SITE_META_DESCRIPTION,
     alternates: {
       canonical: "/reviews",
     },

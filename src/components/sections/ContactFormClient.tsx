@@ -115,7 +115,7 @@ export function ContactFormClient({ surface = "navy" }: { surface?: Surface }) {
       </div>
       <button
         type="submit"
-        className="w-full rounded-full bg-[color:var(--accent)] px-6 py-3.5 text-base font-semibold text-[color:var(--text-primary)] transition hover:bg-[color:var(--accent-hover)]"
+        className="w-full rounded-full bg-[color:var(--accent)] px-6 py-3.5 text-base font-semibold text-[color:var(--text-primary)] transition hover:bg-[color:var(--accent-dark)]"
       >
         Submit request
       </button>

@@ -8,10 +8,10 @@
 
 | Campo | Valore |
 |---|---|
-| Nome | Pasquale Rocchida |
+| Nome | Pasquale Rocchida — brand: **QuickFix Property Maintenance** |
 | Settore | Handyman / Home Maintenance |
 | Località | Bishop's Stortford, Hertfordshire, UK |
-| WhatsApp | +39 320 970 8536 (IT — da aggiornare con numero UK definitivo) |
+| WhatsApp | +44 7746 187685 (UK) → https://wa.me/447746187685 |
 | Email | da definire |
 | Telefono | da definire |
 | Stato contratto | Nessuno — preventivo da effettuare in seconda fase |
@@ -76,9 +76,12 @@
 1. Small Repairs
 2. Furniture Assembly
 3. Wall Fixing & Shelving
-4. Painting Touch-ups
-5. Property Maintenance
-6. General Handyman Jobs
+4. Painting & Decorating
+5. Plumbing
+6. Electrical
+7. Garden Maintenance
+8. Laminated Flooring
+9. Property Maintenance
 
 ---
 
@@ -150,6 +153,19 @@ git push alvenco main
 - Numero WhatsApp attuale è italiano (+39) — da sostituire con UK definitivo prima del go-live
 - Dominio da acquistare in seconda fase, incluso nel preventivo
 - Nessun modello di pricing da implementare sul sito
+- Brand ufficiale: **QuickFix Property Maintenance** (non "Pasquale Rocchida Handyman")
+- Logo: immagine PNG fornita da Facebook — da salvare in `/public/logo-quickfix.png`
+- Palette brand estratta dal logo:
+  - `--primary: #1A3A6B` (blu navy)
+  - `--primary-mid: #1B75BC` (blu medio)
+  - `--accent: #6DBE45` (verde lime)
+  - `--accent-dark: #2E7D32` (verde scuro)
+  - `--text-secondary: #4A4A4A`
+- Facebook: https://www.facebook.com/profile.php?id=61587750327501
+- Dati servizi centralizzati in `src/lib/services.ts` (HOME_PREVIEW_SERVICES + SERVICES) — non duplicati nei componenti
+- Dati gallery centralizzati in `src/lib/gallery.ts` (GALLERY_ITEMS)
+- `allowFullScreen` con S maiuscola in JSX/TSX — `allowFullscreen` lowercase causa build error (ERR React/TS)
+- Ultimo commit push: `74695bc` — fix images, gallery captions, areas map embed
 
 ---
 
@@ -159,4 +175,4 @@ git push alvenco main
 |---|---|
 | Maggio 2026 | File creato — progetto avviato, brief analizzato |
 | Maggio 2026 | Sezione GIT & DEPLOY corretta: doppio remote manuale (origin + alvenco), nessuna GitHub Action — pattern standard Alvenco da TUZZOLINO |
-| 16 Maggio 2026 | Deploy docs: URL Vercel esplicitato (`https://handyman-stortford.vercel.app`); STEP 1–2 eseguiti — `origin` → repo personale `alessandro2506/handyman-stortford`, `alvenco` → mirror `AlvencoLtd/handyman-stortford`; push workflow documentato |
+| 16 Maggio 2026 | Fix immagini non pertinenti (Small Repairs, Wall Fixing, General Handyman Jobs) via src/lib/services.ts; gallery 9 slot con didascalie via src/lib/gallery.ts; mappa Areas SVG sostituita con iframe Google Maps reale. Commit: 74695bc |

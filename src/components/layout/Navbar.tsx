@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -42,9 +43,14 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:py-4">
         <Link href="/" className="group shrink-0">
-          <span className="block font-extrabold leading-tight text-[color:var(--primary)] tracking-tight">
-            Pasquale Rocchida | Handyman
-          </span>
+          <Image
+            src="/logo-quickfix.svg"
+            alt="QuickFix Property Maintenance"
+            width={180}
+            height={68}
+            className="h-14 w-auto object-contain"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -62,7 +68,7 @@ export function Navbar() {
         <div className="hidden lg:block">
           <Link
             href="/#contact"
-            className="inline-flex items-center justify-center rounded-full bg-[color:var(--accent)] px-5 py-2.5 text-sm font-semibold text-[color:var(--text-primary)] shadow-sm transition hover:bg-[color:var(--accent-hover)]"
+            className="inline-flex items-center justify-center rounded-full bg-[color:var(--accent)] px-5 py-2.5 text-sm font-semibold text-[color:var(--text-primary)] shadow-sm transition hover:bg-[color:var(--accent-dark)]"
           >
             Get a Quote
           </Link>
@@ -100,7 +106,7 @@ export function Navbar() {
           <Link
             href="/#contact"
             onClick={() => setOpen(false)}
-            className="mt-2 inline-flex items-center justify-center rounded-full bg-[color:var(--accent)] px-5 py-3 text-base font-semibold text-[color:var(--text-primary)] hover:bg-[color:var(--accent-hover)]"
+            className="mt-2 inline-flex items-center justify-center rounded-full bg-[color:var(--accent)] px-5 py-3 text-base font-semibold text-[color:var(--text-primary)] hover:bg-[color:var(--accent-dark)]"
           >
             Get a Quote
           </Link>

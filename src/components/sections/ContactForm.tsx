@@ -12,7 +12,7 @@ export function ContactForm() {
             Get a Free Quote
           </h2>
           <p className="mt-4 text-lg text-white/85">
-            Describe your job and I&apos;ll get back to you quickly.
+            Describe your job and we&apos;ll get back to you quickly.
           </p>
         </div>
 
@@ -21,7 +21,7 @@ export function ContactForm() {
           <p className="mt-6 text-center text-sm text-white/80">
             Or message directly on WhatsApp →{" "}
             <a
-              href="https://wa.me/393209708536"
+              href="https://wa.me/447746187685"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-[color:var(--accent)] underline-offset-4 hover:underline"

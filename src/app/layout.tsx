@@ -5,6 +5,11 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import {
+  SITE_META_DESCRIPTION,
+  SITE_TITLE_DEFAULT,
+  TITLE_TEMPLATE,
+} from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
@@ -17,9 +22,9 @@ const inter = Inter({
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Pasquale Rocchida Handyman",
-  description: "Professional handyman services in Bishop's Stortford",
-  telephone: "TBD",
+  name: "QuickFix Property Maintenance",
+  description: SITE_META_DESCRIPTION,
+  telephone: "07746 187685",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Bishop's Stortford",
@@ -38,16 +43,17 @@ const localBusinessJsonLd = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Pasquale Rocchida | Handyman Bishop's Stortford",
-    template: "%s | Pasquale Rocchida Handyman",
+    default: SITE_TITLE_DEFAULT,
+    template: TITLE_TEMPLATE,
   },
-  description:
-    "Reliable local handyman in Bishop's Stortford for repairs, furniture assembly, painting touch-ups and property maintenance.",
+  description: SITE_META_DESCRIPTION,
   keywords: [
+    "quickfix bishop's stortford",
     "handyman bishop's stortford",
-    "local handyman",
-    "home maintenance",
     "property maintenance",
+    "home maintenance",
+    "plumbing handyman",
+    "electrical small jobs",
   ],
 };
 

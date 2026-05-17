@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_META_DESCRIPTION } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Areas Covered",
-    description:
-      "Handyman coverage across Bishop's Stortford, Sawbridgeworth, Harlow, Stansted Mountfitchet, Hertford, Ware, Great Dunmow and nearby villages.",
+    description: SITE_META_DESCRIPTION,
     alternates: {
       canonical: "/areas",
     },

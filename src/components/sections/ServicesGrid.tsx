@@ -51,7 +51,7 @@ export function ServicesGrid() {
                 </p>
                 <Link
                   href={`/services#${service.slug}`}
-                  className="inline-flex items-center gap-1 text-sm font-semibold text-[color:var(--primary-light)] hover:text-[color:var(--primary)]"
+                  className="inline-flex items-center gap-1 text-sm font-semibold text-[color:var(--primary-mid)] hover:text-[color:var(--primary)]"
                 >
                   Learn more <span aria-hidden>→</span>
                 </Link>

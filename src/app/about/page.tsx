@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { SITE_META_DESCRIPTION } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "About",
-    description:
-      "Meet Pasquale Rocchida — a reliable Bishop's Stortford handyman focused on tidy workmanship, clear communication and local service.",
+    description: SITE_META_DESCRIPTION,
     alternates: {
       canonical: "/about",
     },
@@ -23,7 +23,7 @@ export default function AboutPage() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-[color:var(--border)] shadow-lg">
             <Image
               src={portrait}
-              alt="Pasquale Rocchida portrait placeholder"
+              alt="QuickFix Property Maintenance team placeholder portrait"
               fill
               sizes="(max-width: 768px) 100vw, 280px"
               className="object-cover"
@@ -37,32 +37,33 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-[color:var(--primary)] md:text-5xl">
-            Straightforward help from someone who lives nearby
+            Straightforward help from QuickFix Property Maintenance
           </h1>
 
           <div className="mt-8 space-y-6 text-lg leading-relaxed text-[color:var(--text-secondary)]">
             <p>
-              I built my handyman practice around repeat customers — people who
-              want someone punctual, respectful of their home, and honest when a
-              job needs a specialist instead of a shortcut.
+              QuickFix Property Maintenance is built around repeat customers —
+              households and landlords who want punctual arrivals, respect for their
+              home, and honest advice when something needs a qualified specialist,
+              not a shortcut.
             </p>
             <p>
-              From flats near the station to larger homes toward Sawbridgeworth, I
-              keep visits calm and organised: dust sheets where needed, tools that
-              suit the surface I&apos;m fixing, and updates if plans change mid-job.
+              From flats near Bishop&apos;s Stortford station to larger homes toward
+              Sawbridgeworth, visits stay calm and organised: sheets where dust
+              matters, tools matched to surfaces, and clear updates whenever plans
+              shift mid-job.
             </p>
             <p>
-              Property managers appreciate concise snag clearing between lets,
-              while homeowners value guidance on what can wait versus what should be
-              tackled now — especially around kitchens, shelving and moisture-prone
-              areas.
+              Property managers value concise snag lists cleared between lets;
+              homeowners value guidance on urgent versus wait-and-see fixes —
+              especially kitchens, shelving and damp-prone details.
             </p>
             <p className="rounded-2xl border border-[color:var(--border)] bg-[color:var(--bg-light)] p-6 text-[color:var(--text-primary)]">
               <span className="font-semibold text-[color:var(--primary)]">
                 Satisfaction promise:
               </span>{" "}
-              If something isn&apos;t right after I leave, tell me — I&apos;ll come
-              back and make it right.
+              If something isn&apos;t right after we finish, reach out —
+              we&apos;ll put it right.
             </p>
           </div>
         </div>

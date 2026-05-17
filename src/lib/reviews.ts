@@ -8,7 +8,7 @@ export type Review = {
 export const HOME_REVIEWS = [
   {
     quote:
-      "Pasquale fixed our kitchen shelves and assembled a wardrobe — brilliant job, very tidy and on time.",
+      "QuickFix fixed our kitchen shelves and assembled a wardrobe — brilliant job, very tidy and on time.",
     name: "Sarah M.",
     location: "Bishop's Stortford",
   },

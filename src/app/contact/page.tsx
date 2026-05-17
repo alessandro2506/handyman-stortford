@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactFormClient } from "@/components/sections/ContactFormClient";
+import { SITE_META_DESCRIPTION } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Contact",
-    description:
-      "Contact Pasquale Rocchida Handyman for quotes via WhatsApp or the enquiry form — Bishop's Stortford and nearby.",
+    description: SITE_META_DESCRIPTION,
     alternates: {
       canonical: "/contact",
     },
@@ -25,7 +25,7 @@ export default function ContactPage() {
             Let&apos;s plan your visit
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-[color:var(--text-secondary)]">
-            Send photos if it helps — I&apos;ll confirm scope, timing and pricing
+            Send photos if it helps — we&apos;ll confirm scope, timing and pricing
             before any work begins.
           </p>
         </header>
@@ -38,20 +38,33 @@ export default function ContactPage() {
             <p className="mt-3 text-[color:var(--text-secondary)]">
               Prefer WhatsApp for pictures? Tap the floating button anytime.
             </p>
-          <ContactFormClient surface="light" />
+            <div className="mt-8">
+              <ContactFormClient surface="light" />
+            </div>
           </div>
 
           <aside className="space-y-8 rounded-3xl border border-[color:var(--border)] bg-[color:var(--primary)] p-10 text-white shadow-xl">
             <div>
+              <h2 className="text-xl font-bold">Phone</h2>
+              <p className="mt-3 text-white/85">Call Mon–Sat, 8am–6pm</p>
+              <a
+                href="tel:+447746187685"
+                className="mt-5 inline-flex text-2xl font-extrabold tracking-tight text-white hover:text-white/90"
+              >
+                07746 187685
+              </a>
+            </div>
+
+            <div className="border-t border-white/15 pt-8">
               <h2 className="text-xl font-bold">WhatsApp</h2>
               <p className="mt-3 text-white/85">
                 Fastest route for photos and flexible scheduling.
               </p>
               <Link
-                href="https://wa.me/393209708536"
+                href="https://wa.me/447746187685"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 rounded-full bg-[color:var(--accent)] px-6 py-3 text-sm font-semibold text-[color:var(--text-primary)] hover:bg-[color:var(--accent-hover)]"
+                className="mt-5 inline-flex items-center gap-2 rounded-full bg-[color:var(--accent)] px-6 py-3 text-sm font-semibold text-[color:var(--text-primary)] hover:bg-[color:var(--accent-dark)]"
               >
                 Message on WhatsApp
               </Link>

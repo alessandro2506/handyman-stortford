@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SERVICES } from "@/lib/services";
+import { SITE_META_DESCRIPTION } from "@/lib/seo";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Services",
-    description:
-      "Handyman services in Bishop's Stortford: repairs, assembly, shelving, painting touch-ups, maintenance and general household jobs.",
+    description: SITE_META_DESCRIPTION,
     alternates: {
       canonical: "/services",
     },
@@ -75,7 +75,7 @@ export default function ServicesPage() {
                   </ul>
                   <Link
                     href="/#contact"
-                    className="inline-flex items-center justify-center rounded-full bg-[color:var(--accent)] px-7 py-3 text-base font-semibold text-[color:var(--text-primary)] shadow-sm transition hover:bg-[color:var(--accent-hover)]"
+                    className="inline-flex items-center justify-center rounded-full bg-[color:var(--accent)] px-7 py-3 text-base font-semibold text-[color:var(--text-primary)] shadow-sm transition hover:bg-[color:var(--accent-dark)]"
                   >
                     Get a Quote
                   </Link>

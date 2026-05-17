@@ -27,7 +27,7 @@ export function ScrollToTop() {
         type="button"
         aria-label="Scroll to top"
         onClick={handleClick}
-        className="relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-[color:var(--primary)] text-white shadow-lg shadow-black/15 transition hover:bg-[color:var(--primary-light)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
+        className="relative inline-flex h-12 w-12 items-center justify-center rounded-full bg-[color:var(--primary)] text-white shadow-lg shadow-black/15 transition hover:bg-[color:var(--primary-mid)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--accent)]"
       >
         <span
           key={pulseKey}
