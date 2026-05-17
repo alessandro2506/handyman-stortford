@@ -46,7 +46,7 @@ export default function ServicesPage() {
                   }`}
                 >
                   <Image
-                    src={service.image.replace("w=600", "w=960")}
+                    src={service.image}
                     alt=""
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

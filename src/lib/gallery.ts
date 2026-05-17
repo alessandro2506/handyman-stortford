@@ -3,41 +3,42 @@ export type GalleryItem = {
   caption: string;
 };
 
+/** Same onsite photography as `/services`; order mirrors service lineup */
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
-    src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80",
-    caption: "Shelf installation — Bishop's Stortford",
+    src: "/images/site/small-repairs.png",
+    caption: "Small repairs — draught sealing and sash detail",
   },
   {
-    src: "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=600&q=80",
-    caption: "Wall-mounted shelving unit",
+    src: "/images/site/furniture-assembly.png",
+    caption: "Furniture assembly — precision cuts on-site",
   },
   {
-    src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
-    caption: "Door hinge repair",
+    src: "/images/site/wall-fixing-shelving.png",
+    caption: "Wall fixing — ladders, prep and tidy finishes",
   },
   {
-    src: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80",
-    caption: "Painting touch-up — interior walls",
+    src: "/images/site/painting-decorating.png",
+    caption: "Painting & decorating — masked rooms and clean lines",
   },
   {
-    src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
-    caption: "Property maintenance visit",
+    src: "/images/site/plumbing.png",
+    caption: "Plumbing — under-sink repairs and tighten-ups",
   },
   {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    caption: "Handyman on-site — Sawbridgeworth",
+    src: "/images/site/electrical.png",
+    caption: "Electrical — domestic fittings and small jobs",
   },
   {
-    src: "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=80",
-    caption: "Furniture assembly — IKEA wardrobe",
+    src: "/images/site/garden-maintenance.png",
+    caption: "Garden maintenance — fencing and outdoor carpentry",
   },
   {
-    src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
-    caption: "Kitchen fixture repair",
+    src: "/images/site/laminated-flooring.png",
+    caption: "Laminate flooring — measure, fit and finish",
   },
   {
-    src: "https://images.unsplash.com/photo-1609743522653-52354461eb27?w=600&q=80",
-    caption: "TV bracket wall mounting",
+    src: "/images/site/property-maintenance.png",
+    caption: "Property maintenance — studwork and planned upkeep",
   },
 ];

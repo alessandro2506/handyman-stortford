@@ -41,14 +41,14 @@ export function Navbar() {
           : "border-transparent bg-white/70 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 md:py-5">
         <Link href="/" className="group shrink-0">
           <Image
             src="/logo-quickfix.svg"
             alt="QuickFix Property Maintenance"
-            width={180}
-            height={68}
-            className="h-14 w-auto object-contain"
+            width={240}
+            height={92}
+            className="h-[4.75rem] w-auto object-contain sm:h-[5.25rem]"
             priority
           />
         </Link>

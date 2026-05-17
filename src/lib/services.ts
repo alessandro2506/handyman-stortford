@@ -10,8 +10,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "small-repairs",
     title: "Small Repairs",
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80",
+    image: "/images/site/small-repairs.png",
     description:
       "From leaky taps to broken hinges — quick fixes handled professionally.",
     benefits: [
@@ -24,8 +23,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "furniture-assembly",
     title: "Furniture Assembly",
-    image:
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80",
+    image: "/images/site/furniture-assembly.png",
     description:
       "IKEA, Argos or any flatpack — assembled correctly, first time.",
     benefits: [
@@ -38,8 +36,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "wall-fixing-shelving",
     title: "Wall Fixing & Shelving",
-    image:
-      "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=600&q=80",
+    image: "/images/site/wall-fixing-shelving.png",
     description:
       "Shelves, TV brackets, curtain rails — fixed securely to any wall type.",
     benefits: [
@@ -52,8 +49,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "painting-decorating",
     title: "Painting & Decorating",
-    image:
-      "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80",
+    image: "/images/site/painting-decorating.png",
     description:
       "Interior painting, touch-ups and finishing — clean lines and durable results.",
     benefits: [
@@ -66,8 +62,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "plumbing",
     title: "Plumbing",
-    image:
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
+    image: "/images/site/plumbing.png",
     description:
       "Minor plumbing jobs — washers, wastes, overflows and sensible first fixes.",
     benefits: [
@@ -80,8 +75,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "electrical",
     title: "Electrical",
-    image:
-      "https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=600&q=80",
+    image: "/images/site/electrical.png",
     description:
       "Small electrical odds and ends within safe, non-certified scope.",
     benefits: [
@@ -94,8 +88,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "garden-maintenance",
     title: "Garden Maintenance",
-    image:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80",
+    image: "/images/site/garden-maintenance.png",
     description:
       "Seasonal upkeep — trims, clears and outdoor fixes ready for tenancy checks.",
     benefits: [
@@ -108,8 +101,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "laminated-flooring",
     title: "Laminated Flooring",
-    image:
-      "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80",
+    image: "/images/site/laminated-flooring.png",
     description:
       "Straightforward laminate installs — subfloor prep discussed up front.",
     benefits: [
@@ -122,8 +114,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "property-maintenance",
     title: "Property Maintenance",
-    image:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
+    image: "/images/site/property-maintenance.png",
     description:
       "Regular upkeep for landlords and homeowners who want peace of mind.",
     benefits: [
