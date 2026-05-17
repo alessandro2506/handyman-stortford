@@ -51,7 +51,7 @@ export function Navbar() {
             alt="QuickFix Property Maintenance"
             width={612}
             height={612}
-            className="h-[7.25rem] w-auto object-contain object-left sm:h-[8rem] lg:h-[10rem]"
+            className="h-[7.75rem] w-auto object-contain object-left sm:h-[8.75rem] lg:h-[11.5rem]"
             priority
           />
         </Link>
