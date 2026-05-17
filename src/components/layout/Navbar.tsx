@@ -48,11 +48,19 @@ export function Navbar() {
           className="group shrink-0 transition-opacity hover:opacity-90"
         >
           <Image
+            src="/images/site/quickfix-house-tools-mark-inline.svg"
+            alt="QuickFix Property Maintenance"
+            width={607}
+            height={188}
+            className="h-[7.5rem] w-auto max-w-[min(100vw-8rem,24rem)] object-contain object-left sm:h-[8rem] lg:hidden"
+            priority
+          />
+          <Image
             src="/images/site/quickfix-house-tools-mark.svg"
             alt="QuickFix Property Maintenance"
             width={612}
             height={612}
-            className="h-[8.5rem] w-auto object-contain object-left sm:h-[9.5rem] lg:h-[12.5rem]"
+            className="hidden h-[8.5rem] w-auto object-contain object-left sm:h-[9.5rem] lg:block lg:h-[12.5rem]"
             priority
           />
         </Link>
