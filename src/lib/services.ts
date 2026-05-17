@@ -36,7 +36,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "wall-fixing-shelving",
     title: "Wall Fixing & Shelving",
-    image: "/images/site/wall-fixing-shelving.png",
+    image: "/images/site/painting-decorating.png",
     description:
       "Shelves, TV brackets, curtain rails — fixed securely to any wall type.",
     benefits: [
@@ -49,7 +49,7 @@ export const SERVICES: ServiceItem[] = [
   {
     slug: "painting-decorating",
     title: "Painting & Decorating",
-    image: "/images/site/painting-decorating.png",
+    image: "/images/site/wall-fixing-shelving.png",
     description:
       "Interior painting, touch-ups and finishing — clean lines and durable results.",
     benefits: [

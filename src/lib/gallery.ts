@@ -14,11 +14,11 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     caption: "Furniture assembly — precision cuts on-site",
   },
   {
-    src: "/images/site/wall-fixing-shelving.png",
+    src: "/images/site/painting-decorating.png",
     caption: "Wall fixing — ladders, prep and tidy finishes",
   },
   {
-    src: "/images/site/painting-decorating.png",
+    src: "/images/site/wall-fixing-shelving.png",
     caption: "Painting & decorating — masked rooms and clean lines",
   },
   {
