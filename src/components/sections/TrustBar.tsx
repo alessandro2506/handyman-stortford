@@ -28,8 +28,16 @@ const items = [
 
 export function TrustBar() {
   return (
-    <section className="bg-[color:var(--primary)] py-14 text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 lg:grid-cols-4">
+    <section className="relative isolate overflow-hidden py-14 text-white">
+      <div
+        aria-hidden
+        className="absolute inset-0 bg-[url('/images/site/handyman-banner.png')] bg-cover bg-center bg-no-repeat"
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 bg-[color:var(--primary)]/55"
+      />
+      <div className="relative z-[1] mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2 lg:grid-cols-4">
         {items.map((item, index) => (
           <motion.div
             key={item.title}
